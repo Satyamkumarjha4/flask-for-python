@@ -10,7 +10,7 @@ def home():
 def about():
     name = 'John'
     age = 25
-    return render_template('about.html')
+    return render_template('about.html', name = name, age = age)
 
 @app.route('/bootstrap')
 def bootstrap():
